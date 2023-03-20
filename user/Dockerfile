@@ -1,4 +1,4 @@
-FROM node:1
+FROM node:14
 
 EXPOSE 8080
 
@@ -11,4 +11,5 @@ RUN npm install
 COPY server.js /opt/server/
 
 CMD ["node", "server.js"]
+
 
