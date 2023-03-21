@@ -32,3 +32,11 @@ services:
       - redis
     networks:
       - roboshop
+  cart:
+    image: cart:v1
+    container_name: cart
+    depends_on:
+      - redis
+      - catalogue
+    networks:
+      - roboshop
